@@ -10,4 +10,5 @@ from datacenter.models import Visit  # noqa: E402
 if __name__ == '__main__':
     # Программируем здесь
     visits = Visit.objects.all()
-    print(visits)
+    opened_visits = Visit.objects.filter(leaved_at=None)
+    print(opened_visits)
