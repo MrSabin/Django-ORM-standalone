@@ -18,7 +18,7 @@ if __name__ == '__main__':
         passed_hours = time_passed.days * 24 + time_passed.seconds // 3600
         passed_minutes = (time_passed.seconds % 3600) // 60
         passed_seconds = (time_passed.seconds % 60)
-        print(visit)
+        print(visit.passcard)
         print("Зашел в хранилище, время по Москве:")
         print(timezone.localtime(visit.entered_at))
         print("Находится в хранилище:")
